@@ -1,7 +1,7 @@
 import numpy as np
 
 # Load IDs of page link origins and targets
-file_name = 'wikilink_graph.2004-03-01.csv'
+file_name = 'enwiki.wikilink_graph.2004-03-01.csv'
 ID_From = np.genfromtxt(file_name, delimiter='\t', usecols= 0, dtype=np.int32, skip_header=1)
 ID_To = np.genfromtxt(file_name, delimiter='\t', usecols= 2, dtype=np.int32, skip_header=1)
 
